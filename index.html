@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rashi Dhoju</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">Rashi Dhoju <br><span style="font-size: 16px;">(Video Editor/Graphic Designer)</span></td>
+                <td id="navigation">
+                    <a href="#bio">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h3> Hi there, I'm Rashi Dhoju. <br>I am a video editor and graphic designer based in Kathmandu, Nepal. I am passionate about creating captivating video and graphic content, and I am excited to showcase my creations to you <br> Thanks for stopping by!</h3>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://www.linkedin.com/in/rashi-dhoju-0491161b3/?originalSubdomain=np" target="_blank" class="social"><i class="fab fa-linkedin"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="https://www.instagram.com/rashidhoju/" target="_blank" class="social"><i class="fab fa-instagram"></i></a></td>
+                        <!-- <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://github.com/rashidhoju" target="_blank" class="social"><i class="fab fa-github"></i></a></td> -->
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <br><br>
+    <div id="bio">
+        <h1>ABOUT</h1>
+        <ul>
+           <li><p>Aspiring editor bringing ideas to life through video production.</p></li> 
+            <li><p>
+                Adaptable video editor skilled in compiling and editing footage, incorporating sound effects, and performing color corrections with nearly 3 years of experience.
+            </p></li>
+            <li><p>
+                Highly Motivated and well-versed in editing tools and design approaches.
+            </p></li>
+            <li>      <p>
+                Graphic Artist successful at applying technical skills to create art that engages customers. 
+            </p></li>
+            <li></p>
+                Clear communicator and team player with an eye for detail and skill in customer relations.
+            </p></li>
+        </ul>
+      
+        <p>For Resume <a href="https://drive.google.com/file/d/1M8AFtWuWjKsgpyj4QrGWRGkWAO4PO_JA/view">click here</a></p> 
+    </div>
+    <br><br>
+    <div id="work">
+        <h1>WORK</h1>
+        <div id="Movie Panels">
+            <h2>Video Creation & Techniques</h2>
+            <div id="videos">   
+                <div class="cards">
+                    <div class="card">
+                        <video width="600" poster="/media/videos/thumbnails/text animation and tracking.jpg" src="/media/videos/text animation and tracking.mp4" controls></video>
+                      <div class="text">
+                        <h3>Text animation and Tracking</h3>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <video width="600" poster="/media/videos/thumbnails/Green Screen and Masking.jpg" src="/media/videos/Green Screen and Masking.mp4" controls></video>
+                      <div class="text">
+                        <h3>Green Screen and Masking</h3>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <video width="600" poster="/media/videos/thumbnails/Colorgrading.jpg" src="/media/videos/Colorgrading .mp4" controls></video>
+                      <div class="text">
+                        <h3>Color Grading</h3>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <video width="600" poster="/media/videos/thumbnails/motion graphics.jpg" src="/media/videos/motion graphics.mp4" controls></video>
+                      <div class="text">
+                        <h3>Motion Graphics</h3>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <video width="600" poster="/media/videos/thumbnails/BROLL .jpg" src="/media/videos/BROLL.mp4" controls></video>
+                      <div class="text">
+                        <h3>B Roll</h3>
+                      </div>
+                    </div> 
+                </div>
+            </div>
+            <br><br>
+            <h2>Graphic Design</h2>
+            <div id="photos">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/1.png" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/2.jpg" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/3.png" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/4.png" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/5.jpg" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/6.jpg" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/7.png" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/8.png" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/new years veg menu.jpg" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/wedding2.png" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/lemon and mint.png" alt="" width="500" height="600">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/ananas pineapple.png" alt="" width="500" height="400">
+                <img onclick="magnify($(this).attr('src'))" src="/media/images/banner 2 png.png" alt="" width="500" height="600">
+            </div>
+            <br><br>
+            <h2>Other : Hobbies/Fun Edits</h2>
+            <section class="HoverVideo">
+                <div class="HoverVideo__wrapper">
+                    <div class="HoverVideo__videoBox">
+                        <video class="video" loop preload="yes">
+                            <source src="/media/videos/1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="HoverVideo__videoBox">
+                        <video poster="/media/videos/thumbnails/2.jpg" class="video" loop preload="yes">
+                            <source src="/media/videos/2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="HoverVideo__videoBox">
+                        <video class="video" loop preload="yes">
+                            <source src="/media/videos/3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="HoverVideo__videoBox">
+                        <video class="video" loop preload="yes">
+                            <source src="/media/videos/7.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="HoverVideo__videoBox">
+                        <video class="video" loop preload="yes">
+                            <source src="/media/videos/6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+      
+    </div>
+    <div id="contact">
+        <h1>CONTACT</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +977 9804404408</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; rashidhoju789@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Hattiban, Lalitpur<br>
+                                        Nepal<br>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://www.linkedin.com/in/rashi-dhoju-0491161b3/?originalSubdomain=np" target="_blank" class="social"><i class="fab fa-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/rashidhoju/"; class="social"><i class="fab fa-instagram"></i></a>
+                                        <!-- <a href="https://github.com/rashi-dhoju" target="_blank"; class="social"><i class="fab fa-github"></i></a> -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <!-- <td>
+                        <form>
+                            <input type="text" placeholder="name" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="your message" required rows="5"></textarea><br>
+                            <button class="btn_one">send</button>
+                        </form> 
+                    </td> -->
+                </tr>
+            </table>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
