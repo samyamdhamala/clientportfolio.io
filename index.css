@@ -380,6 +380,9 @@ button:focus {
         width:100%;
         text-align:center;
     }
+    #other{
+        display: none;
+    }
     .cards{
         padding-left: 0rem;
         flex-wrap: wrap;
